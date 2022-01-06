@@ -1,4 +1,4 @@
-function bubbleSort(arr) {
+const bubbleSort = (arr) => {
   const tukar = (arr, idx1, idx2) => {
     // function tukar() ini gunanya mengubah dua angka dari index awal ke index berikutnya dan begitu sebaliknya
     [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]];
@@ -24,6 +24,6 @@ function bubbleSort(arr) {
   }
   return arr;
   //mengembalikan hasil jadinya
-}
+};
 
 console.log(bubbleSort([2, 7, 5, 3]));
