@@ -6,7 +6,7 @@ const bubbleSort = (arr) => {
 
   for (let i = arr.length; i > 0; i--) {
     // for loop pertama
-    // i ini gunanya mengambil length dari sebuah array yg kita masukin, untuk kasus ini, ada 4 indexes
+    // i ini gunanya mengambil length dari sebuah array yg kita masukin, untuk kasus ini, ada 7 indexes
     // dan selagi i lebih dari 0, i berkurang, i akan berguna untuk for loop kedua
     for (let j = 0; j < i - 1; j++) {
       //guna for loop kedua ini untuk mengurangi komparasi tanpa harus mengulang keseluruh index
