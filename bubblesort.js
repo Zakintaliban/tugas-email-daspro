@@ -26,4 +26,4 @@ const bubbleSort = (arr) => {
   //mengembalikan hasil jadinya
 };
 
-console.log(bubbleSort([4, 8, 2, 1, 5, 7, 6, 3]));
+console.log(bubbleSort([8, 3, 2, 1, 5, 7, 6, 4]));
