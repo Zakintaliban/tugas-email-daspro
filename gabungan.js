@@ -17,7 +17,6 @@ function pivot(arr, start = 0, end = arr.length - 1) {
       swapIdx++;
       // untuk mengubah index berikutnya, contoh index pertama 4, setelahnya 8, dan berikutnya 2, menjadikannya penukaran 8 dan 2.
       tukar(arr, swapIdx, i);
-      console.log(arr, swapIdx, i);
     }
   }
 
@@ -60,7 +59,6 @@ const bubbleSort = (arr) => {
     for (let j = 0; j < i - 1; j++) {
       //guna for loop kedua ini untuk mengurangi komparasi tanpa harus mengulang keseluruh index
       //melainkan index untuk sorting akan berkurang apabila angka terakhir (untuk kasus ini 2) sudah mencapai paling belakang dst.
-      console.log(arr, arr[j], arr[j + 1]);
       //memunculkan array yg kita masukan diawal, index angka awal dan index angka berikutnya
       if (arr[j] < arr[j + 1]) {
         //apabila index awal kurang dari index berikutnya:
@@ -68,13 +66,11 @@ const bubbleSort = (arr) => {
         //function tukar akan melakukan tugasnya. dan akan melakukan perulangan hingga array mengecil.
       }
     }
-    console.log("ONE PASS COMPLETED");
     //membukitkan loop pertama sudah selesai
   }
   return arr;
   //mengembalikan hasil jadinya
 };
 
-console.log(`hasil pivot untuk quicksort adalah: ${pivot(dataInput)}`);
 console.log(`hasil quicksort: ${quickSort(dataInput)}`);
 console.log(`hasil bubblesort: ${bubbleSort(dataInput)}`);
