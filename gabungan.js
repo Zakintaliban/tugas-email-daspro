@@ -1,4 +1,5 @@
 let dataInput = [4, 8, 2, 1, 5, 7, 6, 3];
+// input data
 
 function pivot(arr, start = 0, end = arr.length - 1) {
   const tukar = (arr, idx1, idx2) => {
@@ -74,3 +75,4 @@ const bubbleSort = (arr) => {
 
 console.log(`hasil quicksort: ${quickSort(dataInput)}`);
 console.log(`hasil bubblesort: ${bubbleSort(dataInput)}`);
+// output data
